@@ -15,6 +15,8 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.directive';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 import { UnitComponent } from './components/unit/unit.component';
+import { CreateFormComponent } from './create-form/create-form.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -27,14 +29,16 @@ import { UnitComponent } from './components/unit/unit.component';
     CheckboxComponent,
     DynamicFieldDirective,
     DynamicFormComponent,
-    UnitComponent
+    UnitComponent,
+    CreateFormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,29 @@
+<div>
+  <form [formGroup]="createForm">
+    <mat-form-field class="demo-full-width" [formGroup]="createForm">
+      <input matInput formControlName="label" id="label" placeholder="Label">
+    </mat-form-field>
+    <mat-form-field class="demo-full-width" [formGroup]="createForm">
+      <input matInput formControlName="name" id="name" placeholder="Field Name">
+    </mat-form-field>
+    <mat-form-field class="demo-full-width" [formGroup]="createForm">
+      <mat-select placeholder="Type of Field" formControlName="selType" (selectionChange)="selected($event)">
+        <mat-option *ngFor="let ftype of fTypes" [value]="ftype" >{{ftype | uppercase }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="demo-full-width" [formGroup]="createForm">
+      <mat-chip-list #chipList>
+        <mat-chip>Chip 1</mat-chip>
+      </mat-chip-list>
+      <input matInput [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+      [matChipInputAddOnBlur]="addOnBlur"
+      (matChipInputTokenEnd)="add($event)" [matChipInputFor]="chipList" formControlName="options" id="options" placeholder="Field Name">
+    </mat-form-field>
+
+    <!-- <mat-form-field class="demo-full-width" [formGroup]="group">
+      <input matInput [formControlName]="form_id" [placeholder]="Form ID" [type]="text">
+      <mat-error *ngIf="group.get(field.name).hasError(validation.name)">{{validation.message}}</mat-error>
+    </mat-form-field> -->
+  </form>
+  {{createForm.value | json}}
+</div>
