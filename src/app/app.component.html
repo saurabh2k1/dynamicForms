@@ -1,13 +1,10 @@
-<div class="form">
-  <div style="text-align:center">
-    <h1>Registration Form</h1>
-  </div>
-  <dynamic-form [fields]="regConfig"   (submit)="submit($event)"></dynamic-form>
-  <div class="margin-top">
-    {{form.value | json }}
-  </div>
-   <a routerLink="/create">Create</a>
-  <div>
-    <router-outlet></router-outlet>
-  </div>
+<!-- Menu -->
+<button mat-button [matMenuTriggerFor]="main">Menu</button>
+<mat-menu #main="matMenu">
+  <button mat-menu-item [routerLink]="['/create']" routerLinkActive="router-link-active">Create Form</button>
+</mat-menu>
+<!-- / Menu-->
+<hr>
+<div>
+  <router-outlet></router-outlet>
 </div>

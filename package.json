@@ -28,6 +28,7 @@
     "cryptiles": "^4.1.2",
     "hoek": "^5.0.4",
     "moment": "^2.22.2",
+    "ngx-mask": "^6.5.18",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.0.0-rc.0",
     "zone.js": "^0.8.19"

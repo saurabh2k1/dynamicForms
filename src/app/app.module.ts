@@ -17,6 +17,7 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
 import { UnitComponent } from './components/unit/unit.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AddValidationComponent } from './add-validation/add-validation.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AppRoutingModule } from './app-routing.module';
     DynamicFieldDirective,
     DynamicFormComponent,
     UnitComponent,
-    CreateFormComponent
+    CreateFormComponent,
+    AddValidationComponent
   ],
   imports: [
     BrowserModule,
