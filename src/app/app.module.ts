@@ -18,6 +18,9 @@ import { UnitComponent } from './components/unit/unit.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AddValidationComponent } from './add-validation/add-validation.component';
+import { MyNavComponent } from './my-nav/my-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { AddValidationComponent } from './add-validation/add-validation.componen
     DynamicFormComponent,
     UnitComponent,
     CreateFormComponent,
-    AddValidationComponent
+    AddValidationComponent,
+    MyNavComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import { AddValidationComponent } from './add-validation/add-validation.componen
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent],

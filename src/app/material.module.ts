@@ -14,7 +14,9 @@ import { MatButtonModule,
   MatCheckboxModule,
   MatRadioModule,
   MatChipsModule,
-  MatMenuModule } from '@angular/material';
+  MatMenuModule,
+  MatToolbarModule,
+  MatSidenavModule } from '@angular/material';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { MatButtonModule,
     MatCheckboxModule,
     MatRadioModule,
     MatChipsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatToolbarModule,
+  MatSidenavModule
   ],
 
   exports: [
@@ -52,7 +56,9 @@ import { MatButtonModule,
     MatCheckboxModule,
     MatRadioModule,
     MatChipsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatToolbarModule,
+    MatSidenavModule
   ],
   declarations: []
 })
